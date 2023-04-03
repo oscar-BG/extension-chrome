@@ -1,0 +1,13 @@
+{
+    "name": "Mi extensión de notas",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "Extensión para tomar notas y verlas despues de su creación",
+    "action": {
+      "default_icon": "edit.png",
+      "default_popup": "popup.html"
+    },
+    "permissions": [
+      "storage"
+    ]
+}
