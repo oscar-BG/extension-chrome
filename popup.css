@@ -1,3 +1,15 @@
+.container {
+    width: 250px;
+    height: 150px;
+}
+.container h1 {
+    text-align: center;
+}
+
+.hijo {
+    display: flex;
+    justify-content: center;
+}
 .a-btn {
     min-width: 100px;
     min-height: 10px;
@@ -8,6 +20,14 @@
     border-radius: 10px;
     text-decoration: none;
     display: block;
+}
+.a-btn-regresar {
+    margin: 2px;
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
 }
 .titulo-h1 {
     white-space: nowrap;
