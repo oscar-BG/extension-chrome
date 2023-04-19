@@ -3,38 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <title>Mi extensión de notas</title>
-  <link rel="stylesheet" href="../popup.css">
+  <link rel="stylesheet" href="../css/popup.css">
 </head>
 <body>
   <div class="container">
-    <a href="../popup.html" id="add-notes-btn" class="a-btn-regresar"> ← Regresar </a>
-    <h1 class="titulo-h1">Agregar sección</h1>
+    <a href="../popup.html" class="a-btn-regresar"> ← Regresar </a>
 
-    <div class="hijo">
-      <select name="select_categoria" id="select_categoria" style="min-width: 150px; height: 25px; display: block;">
-        <option value="vacio" selected></option>
-        <option value="dsd">dsdOtra ... </option>
-        <option value="dsdsd">dsdsdssdOtra ... </option>
-        <option value="">Otra ... </option>
-        <option value="">Otra ... </option>
-        <option value="">Otra ... </option>
-      </select>
-      
-    </div>
-    <br>  
+    <h1 class="titulo-h1">Agregar nueva nota</h1>
     
-    <div id="input_nueva_categoria" style="display: none;">
-      <input type="text" id="category-input" name="category-input" placeholder="Categoria" >
-      <textarea id="note-input"></textarea>
-      <button id="save-note-btn"> Guardar nota </button>
-      <button id="clear-note-btn"> Borrar Notas </button>
-      <ul id="note-list"></ul>
+    <div class="hijo">
+
+      <input type="text" list="datalist-category" id="input-category" name="input-category" placeholder="Categoria">
+
+      <textarea id="input-note" maxlength="200" placeholder="nota..."></textarea>
+
+      <button id="btn-save-note"> Guardar nota </button>
+      <!-- <button id="btn-clear-note"> Borrar Notas </button> -->
+      <!-- <ul id="list-note"></ul> -->
+
+      <datalist id="datalist-category">
+        <option value="Trabajo">Trabajo</option>
+        <option value="Escuela">Escuela</option>
+        <option value="Peliculas">Peliculas</option>
+      </datalist>
     </div>
-    <!-- <ul id="note-list"></ul> -->
-
   </div>
-
-  <script src="../popup.js"></script>
-  <script src="../js/add_notes.js"></script>
+  <!-- https://developer.chrome.com/docs/extensions/reference/storage/ -->
+  <!-- <script src="../popup.js"></script> -->
+  <!-- <script src="../js/add_notes.js"></script> -->
 </body>
 </html>
