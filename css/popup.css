@@ -9,7 +9,6 @@
 .hijo {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 .hijo input{
     border-radius: 10px;
@@ -32,6 +31,11 @@
 .hijo button:hover {
     background-color: #89c2d9;
     cursor: pointer;
+}
+.hijo label {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
 }
 .a-btn {
     min-width: 100px;

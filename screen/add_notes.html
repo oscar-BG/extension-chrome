@@ -13,23 +13,20 @@
     
     <div class="hijo">
 
-      <input type="text" list="datalist-category" id="input-category" name="input-category" placeholder="Categoria">
+      <input type="text" list="datalist-category" id="input-category" name="input-category" maxlength="25" placeholder="Categoria">
 
       <textarea id="input-note" maxlength="200" placeholder="nota..."></textarea>
+      <label>  <span id="caracteres-restantes"> 200</span>/200</label>
 
-      <button id="btn-save-note"> Guardar nota </button>
-      <!-- <button id="btn-clear-note"> Borrar Notas </button> -->
-      <!-- <ul id="list-note"></ul> -->
+      <button id="btn-save-note" style="display: block;"> Guardar nota </button>
 
       <datalist id="datalist-category">
-        <option value="Trabajo">Trabajo</option>
-        <option value="Escuela">Escuela</option>
-        <option value="Peliculas">Peliculas</option>
       </datalist>
+
     </div>
   </div>
   <!-- https://developer.chrome.com/docs/extensions/reference/storage/ -->
   <!-- <script src="../popup.js"></script> -->
-  <!-- <script src="../js/add_notes.js"></script> -->
+  <script src="../js/add_notes.js"></script>
 </body>
 </html>
